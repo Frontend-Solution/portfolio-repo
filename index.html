@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <!-- Navigation Section -->
+
+    <nav>
+        <div class="container nav-inner">
+
+            <div class="logo">Portfolio</div>
+            <div class="nav-right">
+                <i class="ri-linkedin-fill nav-icon"></i>
+                <i class="ri-facebook-fill nav-icon"></i>
+                <i class="ri-instagram-line nav-icon"></i>
+                <i class="ri-github-line nav-icon"></i>
+                <i class="ri-mail-fill nav-icon"></i>
+                <button class="nav-button">Sign UP</button>
+            </div>
+
+            <ul id="menuList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger" >
+                <i class="ri-menu-line" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+
+    <section class="home">
+        <div class="container">
+
+            <div class="home-inner">
+                <div class="home-left">
+                    <h4>Hello I am a</h4>
+                    <h1><span class="typed-text"></span><span class="cursor">|</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, eveniet? Error et at fuga
+                        praesentium laboriosam veniam cum aliquam repudiandae.praesentium laboriosam veniam cum 
+                        aliquam repudiandae.praesentium laboriosam veniam cum aliquam repudiandae.</p>
+                    <button>Learn More!</button>
+                </div>
+
+                <div class="home-right">
+                    <img src="/Portfolio//portfolioimg/1q1.png" srcset="">
+                </div>
+                
+            </div>
+
+            <div class="bottom-icons">
+                <i class="ri-linkedin-fill icon"></i>
+                <i class="ri-facebook-fill icon"></i>
+                <i class="ri-instagram-line icon"></i>
+                <i class="ri-github-line icon"></i>
+                <i class="ri-mail-fill icon"></i>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--  About Section-->
+
+    <section class="about-section">
+
+        <div class="container section-flex">
+
+            <div class="about-left">
+                <h2>About Me</h2>
+                <h1>Jhon Petter</h1>
+                <img src="/Portfolio//portfolioimg/1127.png" alt="" srcset="">
+            </div>
+
+            <div class="about-right">
+                <p><span style="font-size: 18px; font-weight: 600;">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Totam dolor maiores ratione et reprehenderit ea voluptatem, iusto nesciunt
+                        iure ex non rem inventore facilis! Nostrum inventore natus,</span><br><br> minus quia veritatis
+                    et
+                    vitae! Ducimus quisquam veniam vel provident, accusamus labore sed?</p>
+
+                <h3>Personal Information</h3>
+                <div class="info-grid">
+                    <div class="info-col">
+                        <h5>Age</h5><span>26</span>
+                        <h5>Email</h5><span>testgmail.com</span>
+                        <h5>Phone</h5><span>+7777786</span>
+                    </div>
+                    <div class="info-col">
+                        <h5>Country</h5><span>Pakistan</span>
+                        <h5>Language</h5><span>English, Urdu</span>
+                        <h5>Work Time</h5><span>Available</span>
+                    </div>
+                </div>
+                <button class="about-button">Download CV</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h2 class="conuter" data-target="120"> 0</h2>
+                    <p>Complete Project</p>
+                </div>
+                <div class="stat-box">
+                    <h2 class="conuter" data-target="50"> 0</h2>
+                    <p>Companies Worked</p>
+                </div>
+                <div class="stat-box">
+                    <h2 class="conuter" data-target="50000"> 0</h2>
+                    <p>Total Hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Section -->
+
+    <section class="projects-section">
+        <h2 class="subtitle"> My Recent Project </h2>
+        <h1 class="title">I Work For Big Name </h1>
+
+        <div class="card-row">
+
+            <div class="project-card" onclick="showProject('project1')">
+                <img src="/Portfolio//portfolioimg/aq2.png" alt="" class="project-image">
+            </div>
+
+            <div class="project-card" onclick="showProject('project2')">
+                <img src="/Portfolio//portfolioimg/111q.png" alt="" class="project-image">
+            </div>
+
+            <div class="project-card" onclick="showProject('project3')">
+                <img src="/Portfolio//portfolioimg/110q.png" alt="" class="project-image">
+            </div>
+
+            <div class="project-card" onclick="showProject('project4')">
+                <img src="/Portfolio//portfolioimg/109q.png" alt="" class="project-image">
+            </div>
+        </div>
+
+        <!-- See More Projects -->
+
+        <div class="see-more-btn-container">
+            <button id="see-more-btn" onclick="loadMoreCards()">See More</button>
+        </div>
+
+
+        <div class="card-row hidden" id="additinal-cards">
+
+
+            <div class="project-card" onclick="showProject('project5')">
+                <img src="/Portfolio//portfolioimg/aq3.png" alt="" class="project-image">
+            </div>
+
+
+            <div class="project-card" onclick="showProject('project6')">
+                <img src="/Portfolio//portfolioimg/aq4.png" alt="" class="project-image">
+            </div>
+
+            <div class="project-card" onclick="showProject('project7')">
+                <img src="/Portfolio//portfolioimg/1q7.png" alt="" class="project-image">
+            </div>
+
+            <div class="project-card" onclick="showProject('project8')">
+                <img src="/Portfolio//portfolioimg/qa1.png" alt="" class="project-image">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Close Project Display -->
+
+    <section id="project-display" class="project-display">
+        <button id="close-btn" class="close-btn" onclick="closeProjectDisplay()">X</button>
+
+        <div class="display-left">
+            <img src="" id="display-image" alt="" class="display-image">
+        </div>
+
+        <div class="display-right project-info">
+            <h2 id="project-name">Project Name</h2>
+            <p id="project-tech">Technologies Used: HTML, CSS, JS</p>
+            <p id="project-desc">Description of the project goes here.</p>
+        </div>
+    </section>
+
+
+
+    <!--Work Experience-->
+
+    <section class="experience">
+        <div class="container timeline-section">
+            <h2 class="subtitle">Work Experience</h2>
+            <h1 class="title">Work For Big Name</h1>
+
+
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>Web Designer</h3>
+                        <p><strong>Company Name</strong>(2018-2020)</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam accusantium modi eius,
+                            animi dolorum, vero eos tenetur nostrum consequatur eum, obcaecati ullam quibusdam? Nihil a
+                            iure tempore! Excepturi, voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Front-End-Developer</h3>
+                        <p><strong>Company Name</strong>(2020-2022)</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam accusantium modi eius,
+                            animi dolorum, vero eos tenetur nostrum consequatur eum, obcaecati ullam quibusdam? Nihil a
+                            iure tempore! Excepturi, voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>Web Developer</h3>
+                        <p><strong>Company Name</strong>(2022-2025)</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam accusantium modi
+                            eius, animi dolorum, vero eos tenetur nostrum consequatur eum, obcaecati ullam quibusdam?
+                            Nihil aiure tempore! Excepturi, voluptatibus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h3>Front-End-Developer</h3>
+                        <p><strong>Company Name</strong>(Remote)</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam accusantium modi
+                            eius, animi dolorum, vero eos tenetur nostrum consequatur eum, obcaecati ullam quibusdam?
+                            Nihil aiure tempore! Excepturi, voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+
+    <section class="skills-section">
+        <div class="container">
+            <div class="skill-inner">
+                <div class="skill-left">
+                    <img src="/Portfolio//portfolioimg/1q1.png" alt="" srcset="">
+                </div>
+
+                <div class="skill-right">
+                    <h4>Skills</h4>
+                    <h1>Web Developement</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ex itaque tempore corporis
+                        optio dolorem corrupti cum nobis amet mollitia?</p>
+
+                    <!-- Skill Bar -->
+                    <div class="skill-bar">
+                        <label for="html">HTML</label>
+                        <div class="bar" id="html-bar">
+                            <div class="progress" id="html-progress">
+                                <span class="percentage-text" id="html-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <label for="css">CSS</label>
+                        <div class="bar" id="css-bar">
+                            <div class="progress" id="css-progress">
+                                <span class="percentage-text" id="css-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <label for="tailwind">Tailwind-CSS</label>
+                        <div class="bar" id="tailwind-bar">
+                            <div class="progress" id="tailwind-progress">
+                                <span class="percentage-text" id="tailwind-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <label for="js">JavaScript</label>
+                        <div class="bar" id="js-bar">
+                            <div class="progress" id="js-progress">
+                                <span class="percentage-text" id="js-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <label for="php">PHP</label>
+                        <div class="bar" id="php-bar">
+                            <div class="progress" id="php-progress">
+                                <span class="percentage-text" id="php-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-bar">
+                        <label for="sql">MySQL</label>
+                        <div class="bar" id="sql-bar">
+                            <div class="progress" id="sql-progress">
+                                <span class="percentage-text" id="sql-percentage">0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="/Portfolio/portfolioimg/1q1.png
+                " alt="" class="footer-image">
+                <p class="footer-name">Frontend Solution</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Skill</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="#"><i class="ri-phone-fill nav-icon"></i>+000000</a></li>
+                    <li><a href="#"><i class="ri-mail-fill nav-icon"></i>info@frontendsolution.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>Rawalpindi,<br>
+                   Pakistan.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-line"></div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 <span>Frontend Solution</span> <br> All rights Reserved</p>
+
+        </div>
+    </footer>
+
+
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
