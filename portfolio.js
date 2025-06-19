@@ -85,21 +85,21 @@ function showProject(projectId) {
 
     const projects = {
         project1: {
-            image: '/portfolioimg/aq2.png',
+            image: './portfolioimg/aq2.png',
             name: 'Fashion Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
         },
 
         project2: {
-            image: '/portfolioimg/111q.png',
+            image: './portfolioimg/111q.png',
             name: 'Travel Website Design',
             tech: 'HTML, Bootsrap, React',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
         },
 
         project3: {
-            image: '/portfolioimg/110q.png',
+            image: './portfolioimg/110q.png',
             name: 'School Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
@@ -107,35 +107,35 @@ function showProject(projectId) {
 
 
         project4: {
-            image: '/portfolioimg/109q.png',
+            image: './portfolioimg/109q.png',
             name: 'Burger Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
         },
 
         project5: {
-            image: '/portfolioimg/aq3.png',
+            image: './portfolioimg/aq3.png',
             name: 'Pizza Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
         },
 
         project6: {
-            image: '/portfolioimg/aq4.png',
+            image: './portfolioimg/aq4.png',
             name: 'Pizza Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
         },
 
         project7: {
-            image: '/portfolioimg/1q7.png',
+            image: './portfolioimg/1q7.png',
             name: 'Pizza Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
         },
 
         project8: {
-            image: '/portfolioimg/qa1.png',
+            image: './portfolioimg/qa1.png',
             name: 'Shoe Website Design',
             tech: 'HTML, CSS, JS',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, rem? Ipsam cupiditate dignissimos nisi dicta ipsum possimus nulla et nam? Soluta excepturi, consequuntur corporis ad tempore quaerat velit facilis accusamus.',
